@@ -1,3 +1,6 @@
-list1=["a","v","a"]
-res=list1.count("a")
-print("The Number of occurrence of a:",res)
+str1 = input("Enter a string : ")
+wordlist = str1.split()
+count=[]
+for w in wordlist:
+    count.append(wordlist.count(w))
+print("count of the occurrence:" + str(list(zip(wordlist, count))))
