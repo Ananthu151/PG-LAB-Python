@@ -1,6 +1,8 @@
-str=input("Enter the string:")
-c=0
-for i in str:
-    c=c+1
-print("Number of Characters in the String: ",c)
-
+n=input("Enter the String")
+f={}
+for i in n:
+    if i in f:
+        f[i]=f[i]+1
+    else:
+        f[i]=1
+print("Count:",f)
